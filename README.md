@@ -1,2 +1,1 @@
 # Vegakun
-# Vegakun
