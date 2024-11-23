@@ -18,7 +18,7 @@ jobs:
       - name: menampilkan teks
         run: echo "ini step test"
   deployment:
-    name: deploy app
+    name: deployment app
     runs-on: ubuntu-lastest
     needs: test
     steps:
