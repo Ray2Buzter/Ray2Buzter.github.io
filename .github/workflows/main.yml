@@ -25,7 +25,7 @@ jobs:
       - name: menampilkan teks
         run: echo "ini step deployment"
       - name: SSH Remote Commands
-        uses: appleboy/ssh-action@v1.2.0
+        uses: appleboy/ssh-action@v1.8.0
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
