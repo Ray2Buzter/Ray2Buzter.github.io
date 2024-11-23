@@ -28,10 +28,10 @@ jobs:
         uses: appleboy/ssh-vegakun@v192.168.0.112
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ vegakun }}
+          username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: /
             rm -rf /var/www/html/*
-            git clone https://github.com/Ray2Buzter/Vegakun /var/www/html/vega/
+            git clone https://github.com/Ray2Buzter/Vegakun /var/www/html/
       
