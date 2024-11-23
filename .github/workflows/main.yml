@@ -6,19 +6,19 @@ on:
 jobs:
   build:
     name: build app
-    run-on: ubuntu-latest
+    runs-on: ubuntu-lastest
     steps:
       - name: menampilkan teks
         run: /echo "ini step build"
     test:
       - name: test app
-    run-on: ubuntu-latest
+    runs-on: ubuntu-lastest
     steps:
       - name: menampilkan teks
         run: /echo "ini step test"
     deployment:
       - name: deploy app
-    run-on: ubuntu-latest
+    runs-on: ubuntu-lastest
     steps:
       - name: menampilkan teks
         run: /echo "ini step deployment"
