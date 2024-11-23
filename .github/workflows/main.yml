@@ -11,7 +11,7 @@ jobs:
       - name: menampilkan teks
         run: /echo "ini step build"
     test:
-    name: test app
+      - name: test app
     runs-on: ubuntu-latest
     steps:
       - name: menampilkan teks
