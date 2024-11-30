@@ -29,14 +29,13 @@ jobs:
         name: Build
         runs-on: ubuntu-latest
         steps:
-        - name: executing remote ssh commands using password
-          uses: appleboy/ssh-action@v1.2.0
-          with:
-            host: ${{ secrets.HOST }}
-            username: vegakun.io
-            password: ${{ secrets.PASSWORD }}
-            port: ${{ secrets.PORT }}
-            script: whoami
+        - name: executing remote ssh commands using ssh key
+        uses: appleboy/ssh-action@v0.1.0
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
               script: |
                 rm -rf /var/www/html/*
                 rm -rf /var/www/html/.git
