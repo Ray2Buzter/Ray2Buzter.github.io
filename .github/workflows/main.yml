@@ -18,14 +18,14 @@ jobs:
       - name: menampilkan teks
         run: echo "ini step test"
   deployment:
-    name: deploy app
+    name: deployment app
     runs-on: ubuntu-latest
     needs: test
     steps:
       - name: menampilkan teks
         run: echo "ini step deployment"
       - name: executing remote ssh commands using ssh key
-        uses: appleboy/ssh-action@v1.8.0
+        uses: appleboy/ssh-action@v1.2.0
         with:
             host: ${{ secrets.HOST }}
             username: ${{ secrets.USERNAME }}
